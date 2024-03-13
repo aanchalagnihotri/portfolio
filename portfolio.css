@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: initial;
+    background: #472D2D;
+    color: antiquewhite;
+}
+
+header{
+    position: sticky;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 20px 10%; 
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 600;
+    cursor:default;
+    animation: slideright 1s ease forwards ;
+}
+
+.header a{
+    font-size: 17px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0.5em;
+    animation: slideleft 1s ease forwards;
+}
+
+.header a:hover{
+    font-size: 17px;
+    color: rgb(0, 191, 191);
+    transition: 0.5s;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0.5em;
+    transition: 0.5s;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+    animation: slideup 1s ease forwards;
+}
+
+img{
+    height: 75vh;
+    width: 38vw;
+    border-radius:50%;
+    background:aqua;
+    box-shadow: 0 0 60px black;
+    
+}
+
+.home-content p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.home-content{
+    width: 40vw;
+    animation: slideup 1s ease forwards;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 450px;
+}
+
+.home-content span{
+    color: black;
+    font-size: 50px;
+    /* font-weight: 900; */
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+#btn{
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    color: aqua;
+    padding: 1em;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid aqua;
+}
+
+#btn:hover{
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    color: beige;
+    padding: 1em;
+    cursor: pointer;
+    background:rgb(26, 18, 11);
+    transition: 0.5s;
+    border: 2px solid rgb(26, 18, 11);
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideup{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
